@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"$blanc: #FFFFFF;\n$noir: #000000;\n$grisclair: #F2F2F2;\n$grisform: #ECECEC;\n$bleuciel: #00BCFF;\n$bleufoncé: #63779F;\n$bleuclair: #BDD0F9;\n\nbody {\n  background-color: $blanc; }\n"
+	],
+	"names": [],
+	"mappings": ";AAQA,AAAA,IAAI,CAAC;EACH,gBAAgB,EATV,OAAO;CASc"
+}

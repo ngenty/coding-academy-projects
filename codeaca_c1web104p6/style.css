@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Courier Prime Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Courier Prime Regular'), url('fonts/Courier%20Prime.woff') format('woff');
+}
+
+body {
+  font-family: 'Courier Prime Regular';
+}
+
+#logo {
+  width: 90%;
+  margin-top: 5%;
+}
+
+#logo_txt {
+  position: absolute;
+  text-indent: -9999px;
+}
+
+img.responsive-img {
+  width: 100%;
+}
+
+#sidenav_trigger {
+  position: fixed;
+  top: 0.2rem;
+  left: 0.2rem;
+  padding: 0.4rem;
+  padding-bottom: 0rem;
+  border-radius: .4rem;
+  z-index: 1;
+  background-color: #CCC;
+}
+
+#products {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+@media only screen and (min-width: 0) and (max-width: 601px) {
+  .container {
+    width: 100%;
+  }
+
+  #products {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  nav .brand-logo {
+    left: 0 !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+  }
+
+  #sidenav_trigger {
+    top: 94vh;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 90%;
+  }
+}

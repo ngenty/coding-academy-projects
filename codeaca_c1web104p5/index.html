@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <title>Hello World</title>
+  <!-- Meta Information starts -->
+  <meta name="description" content="Page description, optimized for SEO">
+  <meta name="author" content="https://plus.google.com/u/0/+NicolasGenty/posts/p/pub">
+  <meta name="robots" content="index,follow">
+  <meta name="copyright" content="">
+  <!-- Meta Social -->
+  <meta property="og:title" content="Page title">
+  <meta property="og:description" content="Page description, optimized for SEO">
+  <meta property="og:image" content="http://localhost/c1web104p5/img/bg_header.jpg">
+  <meta property="og:url" content="http://localhost/c1web104p5">
+  <meta name="twitter:card" content="http://localhost/c1web104p5/img/bg_header.jpg">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="css/style_sass.css">
+  <style media="screen">
+    #style {
+      position: fixed;
+      padding: 0.4rem;
+      background-color: rgba(31, 36, 41, 0.5);
+      display: flex;
+      flex-direction: row;
+      border-radius: 0.2rem;
+      margin: 0.4rem;
+    }
+    #btn_showhide{
+      font-size: 12px;
+      padding: 0.4rem;
+      cursor: pointer;
+    }
+    /* #target {
+      display: none;
+    } */
+    #style a {
+      text-decoration: none;
+      font-size: 12px;
+      color: white;
+      display: inline-block;
+      margin: 0.4rem 0.5rem 0rem 0.5rem;
+    }
+    #style a:hover{
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    let style = function() {
+      console.log("LOADED");
+      let target = document.getElementById('target');
+      target.style.display = 'none';
+      var btn_showhide = document.getElementById('btn_showhide');
+
+      var toggle = function(item) {
+        if (item.style.display === 'none') {
+          btn_showhide.innerHTML = "&#x25C0;";
+          return item.style.display = 'block';
+        } else {
+          btn_showhide.innerHTML = "&#x25B6;";
+          return item.style.display = 'none';
+        }
+      };
+
+      btn_showhide.addEventListener("click", function() {
+        toggle(target);
+      });
+
+      document.getElementById("btn_less").addEventListener("click", function() {
+        changeCSS("css/style_less.css");
+      });
+      document.getElementById("btn_sass").addEventListener("click", function() {
+        changeCSS('css/style_sass.css');
+      });
+      document.getElementById("btn_scss").addEventListener("click", function() {
+        changeCSS('css/style_scss.css')
+      });
+      document.getElementById("btn_usability").addEventListener("click", function() {
+        changeCSS('css/style_usability.css')
+      });
+      document.getElementById("btn_green").addEventListener("click", function() {
+        changeCSS('css/style_green.css')
+      });
+      document.getElementById("btn_red").addEventListener("click", function() {
+        changeCSS('css/style_red.css')
+      });
+
+      function changeCSS(cssFile) {
+        var oldlink = document.getElementsByTagName("link").item(3);
+        var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+      }
+
+    }
+    window.onload = style;
+  </script>
+</head>
+
+<body>
+  <div id="style">
+    <div id="btn_showhide">
+      &#x25B6;
+    </div>
+    <div id="target">
+      <a href="#" id="btn_less">LESS</a>
+      <a href="#" id="btn_sass">SASS</a>
+      <a href="#" id="btn_scss">SCSS</a>
+      <a href="#" id="btn_usability">ACCESSIBILITY</a>
+      <a href="#" id="btn_green">GREEN</a>
+      <a href="#" id="btn_red">RED</a>
+    </div>
+  </div>
+  <header id="header" class="wrapper bgimg bg_header" title="header with mountain image">
+    <img src="img/logo_hello-world.png" alt="Hello World">
+  </header>
+  <section id="content" class="wrapper row" role="main">
+    <div class="column">
+      <img src="img/ico_browse.png" alt="browser icon">
+      <h2 class="title">naviguer</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    </div>
+    <div class="column">
+      <img src="img/ico_connect.png" alt="connection icon">
+      <h2 class="title">se connecter</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    </div>
+    <div class="column">
+      <img src="img/ico_analyse.png" alt="analysis icon">
+      <h2 class="title">analyser</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    </div>
+  </section>
+  <section id="accordion" class="wrapper row" role="complementary">
+    <div class="column bg_color_1">
+      <h3 class="title title_big"><strong>Lorem</strong><br>ipsum</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    </div>
+    <div class="column bg_color_2">
+      <h3 class="title title_big"><strong>Dolor</strong><br>sit amet</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    </div>
+    <div class="column bg_color_3">
+      <h3 class="title title_big"><strong>Nulla</strong><br>pariatur</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    </div>
+    <div class="column bg_color_4">
+      <h3 class="title title_big"><strong>Adiapis</strong><br>velit</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    </div>
+  </section>
+  <div class="wrapper bgimg bg_slider" title="slider with moutain images">
+    <nav class="slider">
+      <ul class="row">
+        <li><img src="img/btn_next-back.png" alt=""></li>
+        <li><img src="img/btn_next-back.png" class="right" alt=""></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="newsletter" class="wrapper column">
+    <p class="title title_bg">Inscrivez-vous à notre newsletter</p>
+    <form class="row" action="index.html" method="post">
+      <input id="form_newsletter" type="text" name="form_newsletter" placeholder="Email" aria-label="Email">
+      <button type="button" name="button">Envoyer</button>
+    </form>
+  </div>
+  <footer class="wrapper">
+    <div>
+      2018. &laquo;HelloWorld!&raquo; Built with love
+    </div>
+  </footer>
+</body>
+
+</html>

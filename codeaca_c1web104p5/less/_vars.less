@@ -1,0 +1,25 @@
+@blue: #7bb7eb;
+@white: white;
+@base_color: @blue;
+@text_color: @white;
+
+.bg_color_1 {
+  background-color: lighten( @base_color, 15 );
+}
+
+.bg_color_2 {
+  background-color: lighten( @base_color, 7.5 );
+}
+
+.bg_color_3 {
+  background-color: darken( @base_color, 0 );
+}
+
+.bg_color_4 {
+  background-color: darken( @base_color, 7.5 );
+}
+
+//media queries
+@break-small: 380px;
+@break-medium: 680px;
+@break-large: 1024px;

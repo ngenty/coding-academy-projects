@@ -1,0 +1,436 @@
+/* FOR TESTS ONLY */
+body {
+  /* background-image: url(../resources/mockup.jpg); */
+  background-position-x: center;
+  background-position-y: 0px;
+}
+
+/* https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.grow {
+  content: '';
+  display: block;
+  flex-grow: 1;
+}
+
+/* MAIN ----------------------------------------------------------------------*/
+body {
+  /* font-family: Times New Roman Georgia; */
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  /* color: #505050; */
+  color: #232323;
+  background-color: #CCC;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1280px;
+}
+
+section, figure, #sectionForm {
+  margin-top: 32px;
+  /* padding: 60px 60px 40px 60px; */
+  /* padding: 60px 150px 45px 150px; */
+  padding: 4% 15% 3% 15%;
+  text-align: center;
+  background-color: white;
+}
+
+.sectionTop h2 {
+  font-family: Times, New Roman, Georgia;
+  color: #505050;
+  text-transform: uppercase;
+  font-size: 2.8em;
+  font-style: italic;
+  padding-top: 0px;
+  line-height: 0.7em;
+}
+
+.sectionTop p {
+  margin-top: 1.5em;
+  line-height: 1.3em;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sectionContent strong {
+  font-family: Times New Roman Georgia;
+  font-style: italic;
+  font-size: 1.8em;
+  margin: 1.1em 0em 0.6em 0em;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sectionContent p {
+  line-height: 1.25em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER --------------------------------------------------------------------*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#headerLogo {
+  padding: 30px;
+  -webkit-transition: all 1s ease-out;
+  /* For Safari 3.1 to 6.0 */
+  transition: all 1s ease-out;
+  cursor: default;
+}
+
+#headerLogo img {
+  transition: all 1s ease-out;
+}
+
+#headerLogo:hover img {
+  transform: rotate(360deg);
+}
+
+#headerLogo:hover h1 {
+  opacity: 1;
+  transform: translateX(40px);
+  cursor: default;
+}
+
+#headerLogo h1 {
+  transition: all 1s ease-out;
+  position: absolute;
+  opacity: 0;
+  top: 32px;
+  font-size: 2em;
+  font-family: serif;
+  text-transform: uppercase;
+  font-style: oblique;
+}
+
+#headerNav {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
+
+#headerNav>ul {
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: row;
+}
+
+#headerNav li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 24px;
+}
+
+#headerNav a {
+  text-decoration: none;
+  color: #333;
+  transition: all 1s ease-out;
+}
+
+#headerNav a:hover {
+  text-decoration: underline;
+}
+
+/* JUMBOTRON -----------------------------------------------------------------*/
+#jumbotron {
+  display: block;
+  min-height: 768px;
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#jumbotron h1 {
+  color: white;
+  font-family: Times, New Roman, Georgia;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 4.4em;
+}
+
+/* SERVICES ------------------------------------------------------------------*/
+#sectionServices .sectionContent div {
+  max-width: 220px;
+  min-width: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* NEWS ----------------------------------------------------------------------*/
+#sectionNews .sectionContent {
+  justify-content: space-between;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+#sectionNews .sectionContent div {
+  text-align: left;
+  max-width: 44%;
+}
+
+#sectionNews .sectionContent div:first-child {
+  margin-right: 20px;
+}
+
+#sectionNews .sectionContent div:last-child {
+  margin-left: 20px;
+}
+
+#sectionNews p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* SKILLS --------------------------------------------------------------------*/
+#sectionSkills {}
+
+#divSkills {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#sectionSkills .skills {
+  display: block;
+  width: 44%;
+}
+
+.skills p {
+  text-align: left;
+  font-family: Times, New Roman, Georgia;
+  font-size: 1.6em;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+}
+
+.skillsContainer {
+  background-color: #CCC;
+  height: 1.1em;
+}
+
+.skillsFirst {
+  margin-bottom: 1.6em;
+}
+
+.skill01, .skill02, .skill03, .skill04 {
+  background-color: #7E8D88;
+  color: #7E8D88;
+  height: 1.1em;
+}
+
+.skill01 {
+  width: 90%;
+}
+
+.skill02 {
+  width: 70%;
+}
+
+.skill03 {
+  width: 75%;
+}
+
+.skill04 {
+  width: 85%;
+}
+
+/* BLOCKQUOTE ----------------------------------------------------------------*/
+blockquote {
+  font-family: Times, New Roman, Georgia;
+  font-size: 2em;
+  text-align: center;
+  font-style: italic;
+}
+
+figcaption {
+  color: #555555;
+  font-size: 1.4em;
+  margin-top: 1.3em;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+figcaption span {
+  color: #3a3d3c;
+}
+
+/* FORM ----------------------------------------------------------------------*/
+#sectionForm {
+  padding: 60px 130px 45px 130px;
+}
+
+#sectionForm .sectionContent {
+  justify-content: space-between;
+  margin-top: 55px;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+form label {
+  margin-top: 25px;
+  margin-bottom: 6px;
+}
+
+form label:first-child {
+  margin-top: 0px;
+}
+
+form input {
+  font-size: 1em;
+  padding: 0.2em;
+}
+
+form input[type=submit] {
+  /* border-radius: 10px; */
+  border: none;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 1em !important;
+  background-color: #CCC;
+  padding: 10px;
+  width: 20%;
+  min-width: 80px;
+}
+
+form input[type=submit]:hover {
+  background-color: #333;
+  color: white;
+}
+
+form textarea {
+  font-family: inherit;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 25px;
+  height: 3em;
+  width: auto;
+}
+
+.formError {
+  color: red;
+  /* background-color: orange; */
+  /* padding: 20px; */
+  font-size: 0.9em;
+  border-radius: 3px;
+}
+
+address {
+  width: 40%;
+  padding-top: 5px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+address span {
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+}
+
+address span:last-of-type {
+  margin-top: 0px;
+}
+
+address b {
+  display: inline;
+  font-size: 1em;
+  font-style: normal;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+address em {
+  font-size: .9em;
+}
+
+address a, footer a {
+  text-decoration: none;
+  color: #232323;
+  font-weight: bold;
+}
+
+/* address>span {
+  display: inline-block;
+  margin-top: 20px;
+  line-height: 1.3em;
+} */
+/* GALLERY -------------------------------------------------------------------*/
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 32px;
+}
+
+.gallery img {
+  max-width: 33.33333%;
+  margin-right: 1px;
+  overflow: hidden;
+  min-height: 0;
+  min-width: 0;
+  -webkit-transition: all 500ms ease-out;
+  /* For Safari 3.1 to 6.0 */
+  transition: all 500ms ease-out;
+}
+
+.gallery img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  /* -webkit-filter: blur(5px);
+  filter: blur(5px); */
+}
+
+.gallery img:last-of-type {
+  margin-right: 0px;
+}
+
+/* FOOTER --------------------------------------------------------------------*/
+footer {
+  padding: 33px 40px 25px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer span {
+  font-size: 0.8em;
+}
+
+footer nav a:last-child {
+  margin-left: 15px;
+}

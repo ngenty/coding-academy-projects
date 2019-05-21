@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <title>HTML-CSS-Responsive</title>
+  <!-- Meta Information starts -->
+  <meta name="description" content="Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+  <meta name="keywords" content="Lorem, ipsum, dolor">
+  <meta name="author" content="https://plus.google.com/u/0/+NicolasGenty/posts/p/pub">
+  <meta name="robots" content="index,follow">
+  <meta name="copyright" content="Lorem ipsum dolor">
+  <!-- Meta Social -->
+  <meta property="og:title" content="Lorem ipsum dolor">
+  <meta property="og:description" content="Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+  <meta property="og:image" content="https://localhost/HTML-CSS-Responsive/img/transat.jpg">
+  <meta property="og:url" content="https://localhost/HTML-CSS-Responsive/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+  <!-- Style Sheets starts -->
+  <!--[if IE]><![endif]-->
+  <link rel='stylesheet' type='text/css' media='all' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+  <link rel='stylesheet' id="oldcss" type='text/css' media='all' href='css/style.css'>
+  <!-- Style Sheets ends -->
+
+  <!-- Javascript starts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/carousel.js"></script>
+  <!--[if lt IE 9]>
+              <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+              <![endif]-->
+  <!-- Javascript ends -->
+
+  <!-- Google's analytics -->
+  <script>
+    var _gaq = [
+      ['_setAccount', 'UA-XXXXX-X'],
+      ['_trackPageview']
+    ];
+    (function(d, t) {
+      var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      g.async = true;
+      g.src = '//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g, s);
+    })(document, 'script');
+  </script>
+  <!-- Google analytics ends-->
+</head>
+
+<body>
+  <div class="container container__bg_cian">
+    <div class="container__wrapper">
+      <ul class="navtop">
+        <li class="navtop__li"><a href="#facebook"><img src="img/ico_facebook.png" alt="facebook icon"></a></li>
+        <li class="navtop__li"><a href="#twitter"><img src="img/ico_twitter.png" alt="twitter icon"></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- HEADER -->
+  <header id="header" class="container container__bg_purple">
+    <div class="container__wrapper container__wrapper_row">
+      <div class="header__logo">
+        <img src="img/logo.png" class="header__logo_img" alt="logo">
+      </div>
+      <nav id="nav" class="header__nav">
+        <ul class="header__nav_links_row">
+          <li class="header__nav_li"><a href="#" class="nav_link link_nodeco">Home</a></li>
+          <li id="link_book" class="header__nav_li"><a  href="#" class="nav_link link_arrow link_nodeco">Book</a>
+            <ul id="sub_book" class="header__nav_links_sub">
+              <li class="header__nav_li_sub"><a href="#" class="nav_link link_nodeco">France</a></li>
+              <li class="header__nav_li_sub"><a href="#" class="nav_link link_nodeco">Brezil</a></li>
+              <li class="header__nav_li_sub"><a href="#" class="nav_link link_nodeco">Algeria</a></li>
+            </ul>
+          </li>
+          <li id="link_dest" class="header__nav_li"><a href="#" class="nav_link link_arrow link_nodeco">Destinations</a>
+            <ul id="sub_dest" class="header__nav_links_sub">
+              <li class="header__nav_li_sub"><a href="#" class="nav_link link_nodeco">France</a></li>
+              <li class="header__nav_li_sub"><a href="#" class="nav_link link_nodeco">Brazil</a></li>
+              <li class="header__nav_li_sub"><a href="#" class="nav_link link_nodeco">Algeria</a></li>
+            </ul>
+          </li>
+          <li class="header__nav_li"><a href="#" class="nav_link link_nodeco">Prices</a></li>
+          <li class="header__nav_li"><a href="#" class="nav_link link_nodeco">Alerts</a></li>
+          <li class="header__nav_li header__nav_li_last"><a href="#" class="nav_link link_nodeco">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- JUMBOTRON -->
+  <div class="container container__bg_cian">
+    <div class="container__wrapper">
+
+      <div class="slider__navs">
+        <a href="#" class="slider__nav slider__nav_left">Prev</a>
+        <a href="#" class="slider__nav slider__nav_right">Next</a>
+      </div>
+
+      <ul class="slider">
+        <li class="slider__slide" id="1">
+          <figure class="slide__figure">
+            <img class="slider__img" src="img/slide_01.jpg" alt="Lorem ipsum dolor sit amet">
+            <figcaption class="slide__figcaption">
+              <p>slide_01.jpg</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="slider__slide" id="2">
+          <figure class="slide__figure">
+            <img class="slider__img" src="img/slide_02.jpg" alt="Lorem ipsum dolor sit amet">
+            <figcaption class="slide__figcaption">
+              <p>slide_02.jpg</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="slider__slide" id="3">
+          <figure class="slide__figure">
+            <img class="slider__img" src="img/slide_03.jpg" alt="Lorem ipsum dolor sit amet">
+            <figcaption class="slide__figcaption">
+              <p>slide_03.jpg</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="slider__slide" id="4">
+          <figure class="slide__figure">
+            <img class="slider__img" src="img/slide_04.jpg" alt="Lorem ipsum dolor sit amet">
+            <figcaption class="slide__figcaption">
+              <p>slide_04.jpg</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="slider__slide" id="5">
+          <figure class="slide__figure">
+            <img class="slider__img" src="img/slide_05.jpg" alt="Lorem ipsum dolor sit amet">
+            <figcaption class="slide__figcaption">
+              <p>slide_05.jpg</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="slider__slide" id="6">
+          <figure class="slide__figure">
+            <img class="slider__img" src="img/slide_06.jpg" alt="Lorem ipsum dolor sit amet">
+            <figcaption class="slide__figcaption">
+              <p>slide_06.jpg</p>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+
+      <nav class="slider__bullets">
+        <a href="#1" class="slider__bullet slider__bullet_first">1</a>
+        <a href="#2" class="slider__bullet">2</a>
+        <a href="#3" class="slider__bullet">3</a>
+        <a href="#4" class="slider__bullet">4</a>
+        <a href="#5" class="slider__bullet">5</a>
+        <a href="#6" class="slider__bullet">6</a>
+      </nav>
+    </div>
+
+  </div>
+  <!-- MAIN SECTION -->
+  <main id="main_section" class="container">
+    <div class="container__wrapper">
+      <div class="main">
+        <div class="main__content">
+          <div class="main__content_title ico_fire container__bg_purple">
+            <h2>Safe, structured and amazing application</h2>
+          </div>
+          <p class="main__content_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">more info</a>
+        </div>
+        <div class="main__content">
+          <div class="main__content_title ico_tent container__bg_purple">
+            <h2>The sun is shining today, book your trip</h2>
+          </div>
+          <p class="main__content_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">more info</a>
+        </div>
+        <div class="main__content">
+          <div class="main__content_title ico_bear container__bg_purple">
+            <h2>Meet new people and live more intensely</h2>
+          </div>
+          <p class="main__content_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">more info</a>
+        </div>
+
+      </div>
+      <div id="destination" class="main main_column">
+        <h2 class="title">Destinations</h2>
+        <div class="main">
+          <div class="main_content">
+            <img class="destination__flag" src="img/destination_france.jpg" alt="french flag">
+            <p class="flag_name">France</p>
+          </div>
+          <div class="main_content flag_hidden">
+            <img class="destination__flag" src="img/destination_brazil.jpg" alt="brazilian flag">
+            <p class="flag_name">Brazil</p>
+          </div>
+          <div class="main_content flag_hidden">
+            <img class="destination__flag" src="img/destination_algeria.jpg" alt="algerian flag">
+            <p class="flag_name">Algeria</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ASIDE -->
+  <aside id="aside" class="container container__bg_cian">
+    <div class="container__wrapper">
+      <div class="container__column space_between">
+        <div class="container__column_half">
+          <h3 class="title aside__title">About Us</h3>
+          <p class="aside__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p class="aside__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="container__column_half">
+          <h3 class="title aside__title">Why Us</h3>
+          <p class="aside__p aside__p_ico ico_boussole">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="aside__p aside__p_ico ico_map">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+          <p class="aside__p aside__p_ico ico_bike">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <div>
+        <h3 class="title aside__title">How to travel</h3>
+        <p class="aside__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        <a href="#" class="button link_nodeco">Subscribe</a>
+      </div>
+    </div>
+  </aside>
+  <footer class="container container__bg_purple container__last_border">
+    <nav>
+      <div class="container__wrapper">
+        <ul class="header__nav_links_row nav_little">
+          <li><a href="#" class="link_nodeco">Home</a></li>
+          <li><a href="#" class="link_nodeco">Book</a></li>
+          <li><a href="#" class="link_nodeco">Destinations</a></li>
+          <li><a href="#" class="link_nodeco">Prices</a></li>
+          <li><a href="#" class="link_nodeco">Alerts</a></li>
+          <li><a href="#" class="link_nodeco">Contact</a></li>
+        </ul>
+        <p>&copy; There is no birds here Look around.</p>
+      </div>
+    </nav>
+  </footer>
+</body>
+
+</html>

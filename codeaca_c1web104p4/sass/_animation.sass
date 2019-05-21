@@ -1,0 +1,13 @@
+@keyframes pulse
+  0%
+    @include prefix(transform, scale(1), webkit moz ms)
+  50%
+    @include prefix(transform, scale(1.05), webkit moz ms)
+  100%
+    @include prefix(transform, scale(1), webkit moz ms)
+
+@keyframes bg_infinite
+  0%
+    background-position-x: 0vw
+  100%
+    background-position-x: -100vw

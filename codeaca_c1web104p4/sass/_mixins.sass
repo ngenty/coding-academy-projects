@@ -1,0 +1,65 @@
+@mixin bg-img($img-url,$img-size)
+  background-image: url($img-url)
+  background-repeat: no-repeat
+  background-position: top center
+  background-size: $img-size
+
+@mixin prefix($property, $value, $prefixes: ())
+  @each $prefix in $prefixes
+    #{'-' + $prefix + '-' + $property}: $value
+  #{$property}: $value
+// example @include prefix(animation, 2s ease infinite pulse,webkit moz ms)
+
+@mixin reset_ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+@mixin flex_row
+  display: flex
+  flex-direction: row
+
+@mixin flex_col
+  display: flex
+  flex-direction: column
+
+@mixin base_container
+  padding: 0rem 1.25rem
+  margin: 2rem auto
+  @media screen and (max-width: $break-medium)
+    padding: 0rem
+
+@mixin title
+  font-size: 1.7em
+  font-weight: 100
+
+@mixin paragraph
+  font-size: 0.9em
+  line-height: 1.15em
+  font-weight: 100
+
+@mixin quotes($quote_color)
+  &::before
+    content: '\00AB'
+    padding-right: 0.1rem
+    color: $quote_color
+  &::after
+    content: '\00BB'
+    padding-left: 0.1rem
+    color: $quote_color
+
+@mixin quote($img_quote)
+  @include bg-img($img_quote,10vw)
+  @media screen and (max-width: $break-medium)
+      background-size: 14vw
+  background-position: top left
+  margin-top: 1rem
+  padding: 0rem 0rem 1.5rem 0rem
+  line-height: 1.1em
+
+@mixin blockquote
+  margin-left: 35%
+  @media screen and (max-width: $break-medium)
+    margin-left: 25%
+  font-size: 0.9em
+  padding: 0.4em 0em

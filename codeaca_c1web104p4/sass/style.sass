@@ -1,0 +1,261 @@
+@charset 'UTF-8'
+
+@import '_reset'
+@import '_vars'
+@import '_mixins'
+@import '_animation'
+
+// https://css-tricks.com/box-sizing/
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+  // for test >
+  // @include bg-img("../resources/maquette.png",auto)
+  // height: 1813px
+  // < for test
+  color: $main-text
+  font-family: Helvetica, Arial, sans-serif
+  font-size: 16px
+
+.wrapper
+  max-width: 960px
+  margin: auto
+
+.quote
+  @include quotes(inherit)
+
+#header
+  @include bg-img("../img/bg_header.jpg",100%)
+  max-height: 462px
+  height: 47vw
+  nav
+    background-color: rgba( $white, .5 )
+    ul
+      @include reset_ul
+      @include flex_row
+      justify-content: end
+      position: relative
+      .header_logo
+        position: absolute
+        left: 50%
+        @media screen and (max-width: $break-medium)
+          left: 45%
+        &:hover
+          animation: pulse 1s infinite
+    li
+      display: inline-block
+      a
+        padding: 6px 12px
+        text-decoration: none
+      img
+        width: 5vw
+        @media screen and (max-width: $break-medium)
+          width: 10vw
+        height: auto
+        padding: 5px
+
+#presentation
+  @include flex_row
+  @media screen and (max-width: $break-medium)
+    @include flex_col
+  @include base_container
+  text-align: center
+  div
+    width: 33%
+    @media screen and (max-width: $break-medium)
+      width: 100%
+    padding: 1.25rem
+    margin-right: 1.25rem
+    background-color: $base-bg
+    &:last-of-type
+      margin-right: 0rem
+  img
+    width: 80%
+    padding: 10% 10% 5% 10%
+    @media screen and (max-width: $break-medium)
+      width: 40%
+      padding: 2% 5%
+  .img_middle
+    width: 70%
+    padding: 0% 0% 5% 0%
+    @media screen and (max-width: $break-medium)
+      width: 35%
+      padding: 0% 0% 2% 0%
+  h2
+    @include title
+  p
+    @include paragraph
+    color: lighten($main-text, 50%)
+    margin-top: 1rem
+
+.container_tour
+  @include base_container
+  padding: 2rem 9.25rem
+  @include  flex_row
+  @include bg-img("../img/bg_barre_grise.png",contain)
+  @media screen and (max-width: $break-medium)
+    @include  flex_col
+    text-align: center
+    background-size: cover
+    padding: 2rem
+  div
+    position: relative
+    width: 50%
+    @include flex_col
+    @media screen and (max-width: $break-medium)
+      width: 100%
+  img
+    animation: pulse 5s infinite
+    position: absolute
+    width: 20vw
+    left: 11rem
+    top: -4.5rem
+    @media screen and (max-width: $break-medium)
+      width: 26vw
+      left: 63%
+      top: -8rem
+    @media screen and (min-width:$break-small) and (max-width: $break-medium)
+      width: 36vw
+  h2
+    @include title
+    font-weight: bold
+    padding: 1rem
+  p
+    @include paragraph
+    display: inline-block
+    margin: auto 0rem
+  .tour--button
+    text-transform: uppercase
+    text-decoration: none
+    padding: 1rem 1rem 0.7rem 1rem
+    font-size: 1.4em
+    margin-right: 3rem
+    color: $base-color
+    border: 1px solid $base-color
+    transition: 250ms
+    &:hover
+      color: $white
+      background-color: $base-color
+
+.container_explore
+  @include base_container
+  padding: 1.5rem 4.5rem
+  @include flex_col
+  @include bg-img("../img/aliens.png",contain)
+  background-size: 33%
+  background-position: 15% 1rem
+  @media screen and (max-width: $break-medium)
+    background-position: top
+  div
+    width: 50%
+    align-self: end
+    padding: 2rem 5rem
+    border: 1px solid #CCC
+    text-align: center
+    @media screen and (min-width:$break-small) and (max-width: $break-medium)
+      width: 100%
+      align-self: end
+      padding: 7rem 4rem 1rem 4rem
+    @media screen and (max-width: $break-small)
+      width: 100%
+      padding: 4rem 4rem 1rem 4rem
+  h2
+    @include title
+    font-size: 2em
+  span
+    font-weight: bold
+    color: $lightblue
+  p
+    margin-top: .4rem
+
+aside
+  padding: 1.5rem 4.5rem 1.5rem 8.5rem
+  @media screen and (min-width:$break-small) and (max-width: $break-medium)
+    padding: 0rem 4rem
+  @media screen and (max-width: $break-small)
+    padding: 0rem .4rem
+  h3
+    @include title
+    margin-bottom: 1rem
+    strong
+      font-weight: bold
+  div
+    @include flex_row
+    @media screen and (max-width: $break-medium)
+      @include flex_col
+    #quotes
+      @include flex_col
+      width: 50%
+      @media screen and (max-width: $break-medium)
+        width: 100%
+      margin-right: 5%
+      .quote_01
+        @include quote("../img/ico_quotes_astronaut_01.png")
+        blockquote
+          @include blockquote
+          @include quotes(inherit)
+      .quote_02
+        @include quote("../img/ico_quotes_astronaut_02.png")
+        blockquote
+          @include blockquote
+          @include quotes(inherit)
+
+#form
+  width: 45%
+  @media screen and (max-width: $break-medium)
+    width: 100%
+form
+  width: 100%
+  @include flex_col
+  input[type=submit]
+    padding: 0.3rem 1em
+    margin: auto
+    background-color: $button_bg
+    border: 0px
+    color: $white
+    border-radius: 3px
+    font-size: 1.1em
+    font-weight: 100
+    margin-top: 1.1rem
+    transition: 250ms
+    &:hover
+      color: $white
+      background-color: $base-color
+
+  div
+    @include flex_col
+    padding: 1.5rem
+    background-color: $base-bg
+    label
+      color: $gray_dark
+      margin-top: 0.5rem
+      display: block
+      &:first-of-type
+        margin-top: 0rem
+    input
+      border: 0
+      font-size: 1rem
+      padding: .2rem
+    textarea
+      border: 0
+
+footer
+  // height: 10vw
+  padding-top: 14vw
+  @include bg-img('../img/bg_cloud_footer.png',100vw)
+  background-repeat: repeat-x
+  animation: bg_infinite 60s infinite
+  div
+    text-align: center
+    color: $white
+    background-color: $bluedark
+    padding: 0.7rem 0rem 0.4rem 0rem
+    strong
+      @include quotes($white)
+      color: $black
+
+// .col-1 { width:(100% / 12) - ($grid-spacing * 11 / 12); }

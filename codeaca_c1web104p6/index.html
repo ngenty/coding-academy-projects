@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <title>Batman & Licorne</title>
+  <!-- Meta Information starts -->
+  <meta name="description" content="Page description, optimized for SEO">
+  <meta name="author" content="https://plus.google.com/u/0/+NicolasGenty/posts/p/pub">
+  <meta name="robots" content="index,follow">
+  <meta name="copyright" content="">
+  <!-- Meta Social -->
+  <meta property="og:title" content="Page title">
+  <meta property="og:description" content="Page description, optimized for SEO">
+  <meta property="og:image" content="http://localhost/c1web104p6/img/bg_header.jpg">
+  <meta property="og:url" content="http://localhost/c1web104p6">
+  <meta name="twitter:card" content="http://localhost/c1web104p6/img/bg_header.jpg">
+  <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  <!-- icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body class="grey lighten-4">
+
+  <!-- HEADER -->
+  <div class="container">
+    <nav class="col s12">
+      <div class="nav-wrapper blue-grey lighten-2">
+        <a href="#" class="brand-logo center waves-effect waves-light">
+          <h1 id="logo_txt">Le site de référence d'articles de Batman</h1><img id="logo" src="img/batman/batman.png" alt="logo batman" class="responsive-img">
+        </a>
+        <ul id="nav-mobile" class="right">
+          <li><a href="#" class="material-icons">star</a></li>
+          <li><a href="#products" class="material-icons">store</a></li>
+          <li><a href="#" class="material-icons">mail</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- SIDENAV -->
+    <ul id="slide-out" class="sidenav">
+      <li><a id="BATMAN" href="#BATMAN" class="waves-effect"><i class="material-icons">web</i> version BATMAN</a></li>
+      <li><a id="LICORNE" href="#LICORNE" class="waves-effect"><i class="material-icons">web</i>version LICORNE</a></li>
+      <li><div class="divider"></div></li>
+      <li><a id="ACCESSIBILITY" href="#" class="waves-effect"><i class="material-icons">accessible</i>version accessible</a></li>
+    </ul>
+    <a id="sidenav_trigger" href="#" data-target="slide-out" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+    <!-- SIDENAV END -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <!-- Modal content -->
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+    <!-- Modal End -->
+
+    <!-- HEADER -->
+    <div class="col s12">
+      <img src="img/batman/batman-header.jpg" alt="image de batman" class="responsive-img">
+    </div>
+
+    <!-- PRODUCTS -->
+    <div id="products" class="row">
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/batman/batman-figurine.jpg" alt="jouet batman" class="card-image">
+          </div>
+          <div class="card-content">
+            <p>Figurine Batman</p>
+            <p id="product_toy_content">Parfois discuter de son code peut mettre en évidence des erreurs, voici votre propre assistant personnel</p>
+            <p>1000€</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Commander</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/batman/batman-tasse.jpg" alt="tasse batman" class="">
+          </div>
+          <div class="card-content">
+            <p>Tasse Batman</p>
+            <p id="product_mug_content">Par ce que coder c'est cool mais coder avec du café c'est mieux, voici une super tasse</p>
+            <p>7€</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Commander</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/batman/batman-cle-usb.jpg" alt="cle USB batman" class="">
+          </div>
+          <div class="card-content">
+            <p>Clé USB Batman</p>
+            <p id="product_key_content">Le must de tout bon dev une clé USB, quand c'est Batman c'est encore mieux!</p>
+            <p>50€</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Commander</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class=" nav-wrapper center col s12">
+      <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="waves-effect"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="active blue-grey lighten-2"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class=" page-footer center blue-grey lighten-2">
+      <div id="footer_txt">
+        <i>Etre une l&#8203;icorne c'est comme être développeur, c'est dur d'être une créature fantastique</i><br>
+        <a class="center white-text" href="#!">L&#8203;icorne inconnue</a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
